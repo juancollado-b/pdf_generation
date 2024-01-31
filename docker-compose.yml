@@ -1,0 +1,7 @@
+version: '1.0.0'
+
+services:
+  api:
+    image: sifcop-backend-api:latest # Switch to the remote repository when it exists
+    volumes:
+      - .tmp_pdf:/tmp_pdf

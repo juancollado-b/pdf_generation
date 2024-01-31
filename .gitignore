@@ -1,0 +1,3 @@
+.venv/
+.tmp_pdf/
+docker-compose.override.yml
