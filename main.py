@@ -6,7 +6,7 @@ import io
 app = FastAPI()
 
 @app.get("/generate_pdf")
-async def generate_pdf(url: str):
+def generate_pdf(url: str):
     try:
         # Use pdfkit to generate PDF from the given URL
         print("PDF URL", url)
