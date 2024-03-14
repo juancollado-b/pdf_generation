@@ -11,8 +11,9 @@ RUN apt update && apt install -y --no-install-recommends wkhtmltopdf
 WORKDIR /api
 RUN python -m venv venv
 RUN . ./venv/bin/activate
+
 COPY requirements.txt .
-RUN pip install -r ./requirements.txt
+RUN pip install --no-cache-dir --upgrade -r ./requirements.txt
 
 COPY main.py .
 
