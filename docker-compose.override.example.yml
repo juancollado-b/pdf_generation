@@ -1,0 +1,16 @@
+version: '1.0.0'
+
+services:
+  bbvv_pdf:
+    build: .
+    image: bbvv-pdf-service:latest
+    ports:
+      - "8000:8000"
+    networks:
+      - bbvv_network
+
+networks:
+  bbvv_network:
+    name: bbvv_network
+    external: true
+
